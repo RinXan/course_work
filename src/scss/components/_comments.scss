@@ -1,0 +1,148 @@
+.comments {
+  &__head {
+    display: flex;
+    justify-content: space-between;
+
+    h4 {
+      font-family: 'Russo One', sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      letter-spacing: 0.06em;
+
+      color: $white;
+    }
+
+    .share {
+      display: flex;
+      column-gap: 10px;
+      cursor: pointer;
+
+      span {
+        font-family: 'Russo One', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        letter-spacing: 0.06em;
+
+        color: rgba(255, 255, 255, 0.8);
+      }
+    }
+  }
+
+  .form__text,
+  .comments__author p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.09em;
+
+    color: $white;
+  }
+
+  .comments__form {
+    padding: 20px 0;
+
+    .form__text {
+      margin-bottom: 20px;
+
+      background-color: transparent;
+      width: 100%;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+    input[type='submit'] {
+      padding: 8px 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+
+      font-family: 'Russo One';
+      font-weight: 400;
+      font-size: 14px;
+      letter-spacing: 0.05em;
+      color: $blue;
+
+      cursor: pointer;
+    }
+
+    .comments__cancel {
+      margin-left: 10px;
+      cursor: pointer;
+      background-color: transparent;
+      color: rgba($color: $white, $alpha: 0.3);
+    }
+  }
+}
+
+.comments__list {
+  .comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .comments__author {
+      p {
+        font-weight: 400;
+        font-size: 13px;
+        letter-spacing: 0.09em;
+        
+        color: #ffffff;
+      }
+
+      button {
+        font-weight: 400;
+        font-size: 12px;
+        letter-spacing: 0.05em;
+        color: $blue;
+        background-color: transparent;
+        cursor: pointer;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &__inner {
+      display: flex;
+      column-gap: 10px;
+
+      img {
+        width: 40px;
+        height: 40px;
+
+        border-radius: 50%;
+      }
+    }
+
+    &__bucket {
+      display: none;
+      img {
+        width: 15px;
+      }
+    }
+
+    &:hover {
+      .comment__bucket {
+        cursor: pointer;
+        display: block;
+      }
+    }
+  }
+  
+  .comments__author__name {
+    a {
+      font-weight: 400;
+      font-size: 13px;
+      letter-spacing: 0.05em;
+      color: rgba(66, 142, 255, 1);
+    }
+
+    time {
+      margin-left: 10px;
+      font-weight: 400;
+      font-size: 12px;
+      letter-spacing: 0.05em;
+
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+}

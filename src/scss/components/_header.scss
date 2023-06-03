@@ -1,0 +1,66 @@
+@import '../variables';
+
+.header {
+  height: 50px;
+  padding: 5.5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $black;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+
+  span {
+    color: white;
+  }
+
+  h1 {
+	  font-size: 25px;
+    a {
+      color: $yellow;
+      line-height: 38px;
+    }
+  }
+
+  .burger {
+    padding-top: 3px;
+    height: 18px;
+    width: 18px;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    
+    span,
+    span::after,
+    span::before {
+      display: block;
+      width: 18px;
+      height: 1px;
+      background-color: #fff;
+      position: absolute;
+      opacity: 0.8;
+    }
+
+    span::after,
+    span::before {
+      content: '';
+    }
+
+    span::after {
+      top: 11px;
+    }
+
+    span::before {
+      top: 5.5px;
+    }
+  }
+}

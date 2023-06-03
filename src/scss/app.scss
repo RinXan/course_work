@@ -1,0 +1,192 @@
+@import 'libs/normalize';
+@import 'variables';
+
+@import 'components/all';
+
+body {
+  overflow-y: auto;
+
+  background-color: $yellow;
+
+  &::-webkit-scrollbar {
+    width: 14px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $yellow;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $black;
+    border-radius: 14px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+
+    &:hover {
+      background-color: $scrollbar;
+    }
+  }
+}
+
+.content {
+  padding-top: 90px;
+  padding-bottom: 45px;
+  position: relative;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.show {
+  display: flex;
+  justify-content: center;
+  column-gap: 40px;
+}
+
+.mr-13 {
+  margin-right: 13.5px;
+}
+
+.left-65 {
+  left: 65px;
+}
+
+.left-220 {
+  left: 220px;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.pl-50 {
+  padding-left: 50px;
+}
+
+.pl-72 {
+  padding-left: 72px;
+}
+
+.pl-100 {
+  padding-left: 100px;
+}
+
+.pl-110 {
+  padding-left: 110px;
+}
+
+.pl-150 {
+  padding-left: 150px;
+}
+
+.pl-168 {
+  padding-left: 168px;
+}
+
+.pl-177 {
+  padding-left: 177px;
+}
+
+.pl-200 {
+  padding-left: 200px;
+}
+
+.pl-220 {
+  padding-left: 220px;
+}
+
+.pl-230 {
+  padding-left: 230px;
+}
+
+.pl-240 {
+  padding-left: 240px;
+}
+
+.pl-270 {
+  padding-left: 270px;
+}
+
+.pl-350 {
+  padding-left: 350px;
+}
+
+.pl-400 {
+  padding-left: 400px;
+}
+
+.container {
+  max-width: $containerWidth;
+  margin: 0 auto;
+  position: relative;
+}
+
+.menu {
+  cursor: pointer;
+  .dot:not(:last-child) {
+    margin-bottom: -8px;
+  }
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  transform: scale(0.2);
+}
+
+.grey_grid {
+  display: none;
+  width: calc(100% - 180px);
+  height: 2000px;
+
+  background-color: rgba($color: #000000, $alpha: 0.4);
+
+  position: absolute;
+  top: 50px;
+  left: 200px;
+  z-index: 5;
+}
+
+.flexWrap {
+  flex-wrap: wrap;
+}
+
+.overHid {
+  overflow: hidden;
+}
+
+.overflowX {
+  overflow-x: scroll;
+}
+
+.dpBlock {
+  display: block;
+}
+
+.btn {
+  padding: 8px 10px;
+
+  border: 1px solid #fff;
+  border-radius: 20px;
+
+  background-color: transparent;
+  color: #fff;
+
+  font-size: 15px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+
+  transition: color 0.3s linear, background-color 0.3s linear;
+
+  cursor: pointer;
+
+  &:active {
+    background-color: #fff;
+    color: #000;
+  }
+}
